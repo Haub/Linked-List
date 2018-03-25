@@ -67,7 +67,9 @@ input {
   align-items: center;
 }
 
-#bookmark {
+
+/*--BOOKMARK STYLING*/
+article {
   height: 9.5rem;
   width: 33rem;
   margin: 2rem 0 1rem 1rem;
@@ -90,7 +92,7 @@ hr {
 }
 
 
-h3 {
+link {
   text-align: left;
   color: #607D8B;
   margin: 0.8rem;
