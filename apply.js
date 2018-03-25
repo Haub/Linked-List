@@ -22,11 +22,16 @@ function captureUserInput() {
      <button id = "read-button"></button>
      <button id = "delete-button"></button>
     `;
-  console.log('We are so good');
   bookMarkList.prepend(newBookmark);
+  clearInput();
 }
 
+function clearInput() {
+  userTitle.value= "";
+  userUrl.value= "";
+  console.log('taco mamas');
 
+}
 
 
 
