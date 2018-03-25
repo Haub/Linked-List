@@ -29,6 +29,7 @@ function captureUserInput() {
 function clearInput() {
   userTitle.value= "";
   userUrl.value= "";
+  console.log('taco mamas');
 
 }
 
