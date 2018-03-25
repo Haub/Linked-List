@@ -97,8 +97,8 @@ h3 {
 
 }
 
-#read, 
-#delete {
+#read-button, 
+#delete-button {
   border: none;
   background: none;
   color: #455A64;
@@ -106,12 +106,5 @@ h3 {
 
 } 
 
-#read{
-  
-}
-
-#delete {
-
-}
   /*margin: 0 2% 5% 0;
 }
