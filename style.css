@@ -42,7 +42,7 @@ input {
   color: grey;
 }
 
-.enter {
+.enter-button {
   background-color: #FFC107;
   color: #FFFFFF;
   height: 45px;
@@ -95,8 +95,7 @@ hr {
 link {
   text-align: left;
   color: #607D8B;
-  margin: 0.8rem;
-
+  /*margin: 0.8rem;*/
 }
 
 #read-button, 
@@ -105,8 +104,18 @@ link {
   background: none;
   color: #455A64;
   /*margin-bottom: 0;*/
-
 } 
 
+.read {
+  background-color: #F2F4F4;
+  font: #F05A28;
+}
+
+.readButtonClicked {
+  color: #F05A28;
+  font-weight: 800;
+}
   /*margin: 0 2% 5% 0;
+}
+}
 }

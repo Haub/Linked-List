@@ -9,6 +9,9 @@ var bookMarkList = document.querySelector('#listed-bookmarks');
 
 enterUserInput.addEventListener('click', captureUserInput);
 
+// main.addEventListener('click', function () {
+//   main.classList.toggle('readButtonClicked');
+// });
 
 
 function captureUserInput() {
@@ -29,9 +32,10 @@ function captureUserInput() {
 function clearInput() {
   userTitle.value= "";
   userUrl.value= "";
-  console.log('taco mamas');
-
 }
+
+
+
 
 
 
