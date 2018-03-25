@@ -1,68 +1,117 @@
 
+html, body, section {
+  height: 100vh;
+}
+
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
 section {
-  height: 100vh;
-  width: 49.8%;
-  display: inline-block;
-  border: 1px solid red;
-  
+  display: flex;  
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 h1 {
   color: #FFFFFF;
-  font-size: 60px;
+  font-size: 3.7rem;
   font-weight: 800;
-  margin-top: 10rem;
+  letter-spacing: 0.05em;
+  margin: 9rem 0rem 2rem 0rem;
 }
 
 img {
-  height: 6%;
-  width: 17%;
+  height: 4%;
+  width: 15%;
 }
 
 input {
   height: 1.75rem;
   width: 90%;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: 100;
+  letter-spacing: 0.2rem;
   margin-bottom: 2.5rem;
+  color: grey;
 }
 
-button {
+.enter {
   background-color: #FFC107;
   color: #FFFFFF;
   height: 45px;
   width: 90%;
-  font-size: 20px;
+  font-size: 1.5em;
 }
 
 .left {
+  flex: 1;
   background-color: #455A64;
-  text-align: center;
 }
+
+/*.layout {
+  justify-content: center;
+  align-items: center;
+}*/
 
 .right {
-  background-color: #CFD8DC;
-  float: right;
+  flex: 1;
+  background-color: #CFD8DC; 
+  justify-content: flex-start;
+  align-items: center;
 }
 
-/*
-BOOKMARKS*/
-
-article {
+#bookmark {
+  height: 9.5rem;
+  width: 33rem;
+  margin: 2rem 0 1rem 1rem;
+  padding: 0;
+  /*text-align: left;*/
   border: solid 1px #607D8B;
-  height: 3rem;
-  width: 7rem;
 }
 
 h2 {
+  margin: 0.8rem;
   color: #455A64;
   font-size: 1.5rem;
+  text-align: left;
 }
 
+hr {
+  width: 96%;
+  height: 0.1em;
+  color: #CFD8DC;
+}
+
+
+h3 {
+  text-align: left;
+  color: #607D8B;
+  margin: 0.8rem;
+
+}
+
+#read, 
+#delete {
+  border: none;
+  background: none;
+  color: #455A64;
+  /*margin-bottom: 0;*/
+
+} 
+
+#read{
+  
+}
+
+#delete {
+
+}
+  /*margin: 0 2% 5% 0;
+}
