@@ -6,6 +6,8 @@ html, body, section {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -45,7 +47,7 @@ input {
 .enter-button {
   background-color: #FFC107;
   color: #FFFFFF;
-  height: 45px;
+  height: 2.2rem;
   width: 90%;
   font-size: 1.5em;
 }
@@ -53,6 +55,9 @@ input {
 .left {
   flex: 1;
   background-color: #455A64;
+  align-items: center;
+  text-align: center;
+
 }
 
 /*.layout {
@@ -70,11 +75,10 @@ input {
 
 /*--BOOKMARK STYLING*/
 article {
-  height: 9.5rem;
-  width: 33rem;
-  margin: 2rem 0 1rem 1rem;
-  padding: 0;
-  /*text-align: left;*/
+  height: 8.5rem;
+  width: 36rem;
+  margin: 1rem 0 1rem 1rem;
+  text-align: left;
   border: solid 1px #607D8B;
 }
 
@@ -82,7 +86,6 @@ h2 {
   margin: 0.8rem;
   color: #455A64;
   font-size: 1.5rem;
-  text-align: left;
 }
 
 hr {
@@ -92,10 +95,9 @@ hr {
 }
 
 
-link {
-  text-align: left;
+a {
   color: #607D8B;
-  /*margin: 0.8rem;*/
+  margin: 0.8rem;
 }
 
 #read-button, 
@@ -106,16 +108,24 @@ link {
   /*margin-bottom: 0;*/
 } 
 
-.read {
-  background-color: #F2F4F4;
+#read-button {
+  /*background-color: #F2F4F4;*/
   font: #F05A28;
+  margin-bottom: 0.5rem;
+}
+
+#delete-button {
+  float: right;
 }
 
 .readButtonClicked {
   color: #F05A28;
   font-weight: 800;
 }
+
+
   /*margin: 0 2% 5% 0;
+}
 }
 }
 }
