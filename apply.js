@@ -20,10 +20,10 @@ function captureUserInput() {
   newBookmark.innerHTML = 
     `<h2>${userTitle.value}</h2>
      <hr>
-     <link>${userUrl.value}</link>
+     <a>${userUrl.value}</a>
      <hr>
-     <button id = "read-button"></button>
-     <button id = "delete-button"></button>
+     <button id = "read-button">Read</button>
+     <button id = "delete-button">Delete</button>
     `;
   bookMarkList.prepend(newBookmark);
   clearInput();
