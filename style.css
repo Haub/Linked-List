@@ -74,7 +74,7 @@ input {
 
 
 /*--BOOKMARK STYLING*/
-article {
+ul {
   height: 8.5rem;
   width: 36rem;
   margin: 1rem 0 1rem 1rem;
@@ -109,8 +109,6 @@ a {
 } 
 
 #read-button {
-  /*background-color: #F2F4F4;*/
-  font: #F05A28;
   margin-bottom: 0.5rem;
 }
 
@@ -120,7 +118,13 @@ a {
 
 .readButtonClicked {
   color: #F05A28;
+  background-color: #F2F4F4;
   font-weight: 800;
+}
+
+.readButtonClickedUrl {
+  text-decoration-line: underline;
+  text-decoration: #CFD8DC;
 }
 
 
