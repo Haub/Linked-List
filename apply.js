@@ -14,16 +14,26 @@ enterUserInput.addEventListener('click', captureUserInput);
 // });
 
 
+
+bookMarkList.addEventListener('click', function (e) {
+  console.log(e.target.className);
+});
+
+// if (readButton.clicked == true) {
+//   readButton.classList.add('.readButtonClicked');
+//   userUrl.classList.add('.readButtonClickedUrl');
+}
+
 function captureUserInput() {
-  var newBookmark = document.createElement ('article');
+  var newBookmark = document.createElement ('ul');
 
   newBookmark.innerHTML = 
     `<h2>${userTitle.value}</h2>
      <hr>
      <a>${userUrl.value}</a>
      <hr>
-     <button id = "read-button">Read</button>
-     <button id = "delete-button">Delete</button>
+     <button class = "read-button">Read</button>
+     <button class = "delete-button">Delete</button>
     `;
   bookMarkList.prepend(newBookmark);
   clearInput();
