@@ -10,21 +10,21 @@ var bookMarkList = document.querySelector('#listed-bookmarks');
 enterUserInput.addEventListener('click', captureUserInput);
 
 $('#listed-bookmarks').on('click', '#read-button', readButtonClicked);
-
+$('#listed-bookmarks').on('click', '#delete-button', deleteButtonClicked);
 
 
 function readButtonClicked() {
   console.log('This fucking shit');
   // console.log(this.closest('ul')) // path to ul
   $(this).addClass('readButtonClicked');
+}
 
+function deleteButtonClicked() {
+  console.log('This damn delete button');
+    $(this).parent().remove();
 }
 
 
-
-// bookMarkList.addEventListener('click', function () {
-//   bookMarkList.classList.toggle('readButtonClicked');
-// });
 
 
 function captureUserInput() {
