@@ -9,13 +9,26 @@ var bookMarkList = document.querySelector('#listed-bookmarks');
 
 enterUserInput.addEventListener('click', captureUserInput);
 
-// main.addEventListener('click', function () {
-//   main.classList.toggle('readButtonClicked');
+$('#listed-bookmarks').on('click', '#read-button', readButtonClicked);
+
+
+
+function readButtonClicked() {
+  console.log('This fucking shit');
+  // console.log(this.closest('ul')) // path to ul
+  $(this).addClass('readButtonClicked');
+
+}
+
+
+
+// bookMarkList.addEventListener('click', function () {
+//   bookMarkList.classList.toggle('readButtonClicked');
 // });
 
 
 function captureUserInput() {
-  var newBookmark = document.createElement ('article');
+  var newBookmark = document.createElement ('ul');
 
   newBookmark.innerHTML = 
     `<h2>${userTitle.value}</h2>
