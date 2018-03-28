@@ -16,7 +16,7 @@ $('#listed-bookmarks').on('click', '#delete-button', deleteButtonClicked);
 function readButtonClicked() {
   console.log('This fucking shit');
   // console.log(this.closest('ul')) // path to ul
-  $(this).addClass('readButtonClicked');
+  $(this).toggleClass('readButtonClicked');
 }
 
 function deleteButtonClicked() {
@@ -28,6 +28,7 @@ function deleteButtonClicked() {
 
 
 function captureUserInput() {
+  
   var newBookmark = document.createElement ('ul');
 
   newBookmark.innerHTML = 
@@ -48,6 +49,7 @@ function clearInput() {
 }
 
 
+  // if (userTitle.val() && userUrl.val()) {
 
 
 
