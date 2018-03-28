@@ -24,7 +24,7 @@ div {
 
 h1 {
   color: #FFFFFF;
-  font-size: 3.7rem;
+  font-size: 3.9rem;
   font-weight: 800;
   letter-spacing: 0.05em;
   margin: 9rem 0rem 2rem 0rem;
@@ -36,9 +36,9 @@ img {
 }
 
 input {
-  height: 1.75rem;
+  height: 2rem;
   width: 90%;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 100;
   letter-spacing: 0.2rem;
   margin-bottom: 2.5rem;
@@ -48,7 +48,7 @@ input {
 .enter-button {
   background-color: #FFC107;
   color: #FFFFFF;
-  height: 2.2rem;
+  height: 2.5rem;
   width: 90%;
   font-size: 1.5em;
 }
@@ -58,43 +58,43 @@ input {
 }
 
 .left {
-  flex: 1;
+  flex: 1 300px;
   background-color: #455A64;
   align-items: center;
   text-align: center;
+  min-width: 0;
 
 }
 
-/*.layout {
-  justify-content: center;
-  align-items: center;
-}*/
-
 .right {
-  flex: 1;
+  flex: 1 300px;
   background-color: #CFD8DC; 
   justify-content: flex-start;
   align-items: center;
+  min-width: 0;
+  overflow: scroll;
 }
 
 
 /*--BOOKMARK STYLING*/
 ul {
   background-color: #FFFFFF;
-  height: 8.5rem;
-  width: 36rem;
-  margin: 1rem 0 1rem 1rem;
-  padding: 0 0 0 0.3rem;
+  height: 8.9rem;
+  width: 38rem;
+  margin: 0.8rem 0 0.8rem 1rem;
+  padding: 0 1rem 1rem 1rem;
   text-align: left;
-  border: solid 1px #607D8B;
+  border: solid 2px #607D8B;
 }
 
 h2 {
   margin: 0.8rem;
   color: #455A64;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  overflow: hidden;
 }
-
+}
 
 hr {
   width: 96%;
@@ -108,6 +108,7 @@ a {
   margin: 0.8rem;
   text-decoration: underline;
   text-decoration-color: #f2f4f4;
+  font-size: 1.6rem;
 }
 
 a:hover{
@@ -121,6 +122,9 @@ a:hover{
   background: none;
   text-decoration: underline;
   text-decoration-color: #f2f4f4;
+  font-size: 1rem;
+  color: #455A64;
+  font-weight: 100;
 } 
 
 #delete-button {
@@ -149,6 +153,49 @@ a:hover{
   background-color: #F2F4F4;
 }
 
+@media screen and (max-width: 1190px) {
+    .container {
+      flex-direction: column;
+    } 
 
+    .left {
+      padding: 2rem;
+    }
+    .right {
+      background-color: #CFD8DC;
+    }
+    input, enter-button {
+      height: 12%;
+    }
 
+    h1 {
+      margin-top: 0.2rem;
+    }  
+
+    ul {
+      width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+     h1 {
+      font-size: 3.5rem;
+      margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width: 495px) {
+     h1 {
+      font-size: 2.6rem;
+      margin-top: 0rem;
+    }
+}
+
+   
+    
+}
+
+     
+  
 
