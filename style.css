@@ -19,6 +19,7 @@ div {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 0 2rem 0 1rem;
 }
 
 h1 {
@@ -52,6 +53,10 @@ input {
   font-size: 1.5em;
 }
 
+.enter-button:hover {
+  background-color: #FFD773;
+}
+
 .left {
   flex: 1;
   background-color: #455A64;
@@ -75,9 +80,11 @@ input {
 
 /*--BOOKMARK STYLING*/
 ul {
+  background-color: #FFFFFF;
   height: 8.5rem;
   width: 36rem;
   margin: 1rem 0 1rem 1rem;
+  padding: 0 0 0 0.3rem;
   text-align: left;
   border: solid 1px #607D8B;
 }
@@ -87,6 +94,7 @@ h2 {
   color: #455A64;
   font-size: 1.5rem;
 }
+
 
 hr {
   width: 96%;
@@ -98,46 +106,49 @@ hr {
 a {
   color: #607D8B;
   margin: 0.8rem;
+  text-decoration: underline;
+  text-decoration-color: #f2f4f4;
+}
+
+a:hover{
+  text-decoration-color: #FFC107;
+  font-weight: 800;
 }
 
 #read-button, 
 #delete-button {
   border: none;
   background: none;
-  /*color: #455A64;*/
-  /*margin-bottom: 0;*/
+  text-decoration: underline;
+  text-decoration-color: #f2f4f4;
 } 
-
-#read-button {
-  /*background-color: #F2F4F4;*/
-  /*font: #F05A28;*/
-  margin-bottom: 0.5rem;
-}
 
 #delete-button {
   float: right;
 }
 
+#read-button:hover{
+  font-weight: 800;
+  text-decoration-color: #FFC107;
+}
+
+#delete-button:hover{
+    text-decoration-color: #FFC107;
+}
+
 .readButtonClicked {
-  color: red;
+  color: #f05a28;
   font-weight: 800;
+  background-color: #f2f4f4;
+  text-decoration: underline;
+  text-decoration-color: #f2f4f4;
 }
 
-=======
-  color: #F05A28;
+
+.ulClicked {
   background-color: #F2F4F4;
-  font-weight: 800;
-}
-
-.readButtonClickedUrl {
-  text-decoration-line: underline;
-  text-decoration: #CFD8DC;
 }
 
 
 
-  /*margin: 0 2% 5% 0;
-}
-}
-}
-}
+
