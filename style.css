@@ -104,11 +104,13 @@ a {
 #delete-button {
   border: none;
   background: none;
-  color: #455A64;
+  /*color: #455A64;*/
   /*margin-bottom: 0;*/
 } 
 
 #read-button {
+  /*background-color: #F2F4F4;*/
+  /*font: #F05A28;*/
   margin-bottom: 0.5rem;
 }
 
@@ -117,6 +119,11 @@ a {
 }
 
 .readButtonClicked {
+  color: red;
+  font-weight: 800;
+}
+
+=======
   color: #F05A28;
   background-color: #F2F4F4;
   font-weight: 800;
@@ -126,6 +133,7 @@ a {
   text-decoration-line: underline;
   text-decoration: #CFD8DC;
 }
+
 
 
   /*margin: 0 2% 5% 0;

@@ -9,9 +9,22 @@ var bookMarkList = document.querySelector('#listed-bookmarks');
 
 enterUserInput.addEventListener('click', captureUserInput);
 
-// main.addEventListener('click', function () {
-//   main.classList.toggle('readButtonClicked');
-// });
+$('#listed-bookmarks').on('click', '#read-button', readButtonClicked);
+$('#listed-bookmarks').on('click', '#delete-button', deleteButtonClicked);
+
+
+function readButtonClicked() {
+  console.log('This fucking shit');
+  // console.log(this.closest('ul')) // path to ul
+  $(this).toggleClass('readButtonClicked');
+}
+
+function deleteButtonClicked() {
+  console.log('This damn delete button');
+    $(this).parent().remove();
+}
+
+
 
 
 
@@ -45,6 +58,7 @@ function clearInput() {
 }
 
 
+  // if (userTitle.val() && userUrl.val()) {
 
 
 
