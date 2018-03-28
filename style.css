@@ -74,7 +74,7 @@ input {
 
 
 /*--BOOKMARK STYLING*/
-article {
+ul {
   height: 8.5rem;
   width: 36rem;
   margin: 1rem 0 1rem 1rem;
@@ -122,6 +122,19 @@ a {
   color: red;
   font-weight: 800;
 }
+
+=======
+  color: #F05A28;
+  background-color: #F2F4F4;
+  font-weight: 800;
+}
+
+.readButtonClickedUrl {
+  text-decoration-line: underline;
+  text-decoration: #CFD8DC;
+}
+
+
 
   /*margin: 0 2% 5% 0;
 }

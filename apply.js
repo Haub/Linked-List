@@ -27,8 +27,17 @@ function deleteButtonClicked() {
 
 
 
+
+bookMarkList.addEventListener('click', function (e) {
+  console.log(e.target.className);
+});
+
+// if (readButton.clicked == true) {
+//   readButton.classList.add('.readButtonClicked');
+//   userUrl.classList.add('.readButtonClickedUrl');
+}
+
 function captureUserInput() {
-  
   var newBookmark = document.createElement ('ul');
 
   newBookmark.innerHTML = 
@@ -36,8 +45,8 @@ function captureUserInput() {
      <hr>
      <a>${userUrl.value}</a>
      <hr>
-     <button id = "read-button">Read</button>
-     <button id = "delete-button">Delete</button>
+     <button class = "read-button">Read</button>
+     <button class = "delete-button">Delete</button>
     `;
   bookMarkList.prepend(newBookmark);
   clearInput();
