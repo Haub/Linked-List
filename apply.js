@@ -6,22 +6,19 @@ var deleteButton = document.querySelector('#delete-button');
 var bookMarkList = document.querySelector('#listed-bookmarks');
 
 
-
 enterUserInput.addEventListener('click', urlval);
 
 $('#listed-bookmarks').on('click', '#read-button', readButtonClicked);
 $('#listed-bookmarks').on('click', '#delete-button', deleteButtonClicked);
 
-
-function readButtonClicked() {
-  console.log('This fucking shit');
-  $(this).toggleClass('readButtonClicked');
+function readButtonClicked(event) {
+  event.preventDefault();
+  $(this).toggleClass('read-button','readButtonClicked');
   $(this).parent().toggleClass('ulClicked');
 }
 
 function deleteButtonClicked () {
-  console.log('This damn delete button');
-    $(this).parent().remove();
+  $(this).parent().remove();
 }
 
 function captureUserInput() {
@@ -46,8 +43,8 @@ function urlval() {
     } else {
        alert ('please enter a valid URL');
     }
+    clearInput();
 }
-
 
 function clearInput() {
   userTitle.value= "";

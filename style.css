@@ -4,10 +4,10 @@ html, body, section {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 section {
@@ -23,107 +23,106 @@ div {
 }
 
 h1 {
-  color: #FFFFFF;
-  font-size: 3.9rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
   margin: 9rem 0rem 2rem 0rem;
+  font-size: 3.9rem;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  font-weight: 800;
 }
 
 img {
-  height: 4%;
+  height: 3%;
   width: 15%;
 }
 
 input {
+  margin-bottom: 2.5rem;
   height: 2rem;
   width: 90%;
   font-size: 1.7rem;
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 0.2rem;
-  margin-bottom: 2.5rem;
-  color: grey;
+  color: #808080;
 }
 
 .enter-button {
-  background-color: #FFC107;
-  color: #FFFFFF;
   height: 2.5rem;
   width: 90%;
   font-size: 1.5em;
+  background-color: #ffc107;
+  color: #ffffff;
 }
 
 .enter-button:hover {
-  background-color: #FFD773;
+  background-color: #ffd7d3;
 }
 
 .left {
   flex: 1 300px;
-  background-color: #455A64;
   align-items: center;
   text-align: center;
   min-width: 0;
-
+  background-color: #455a64;
 }
 
 .right {
   flex: 1 300px;
-  background-color: #CFD8DC; 
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
   overflow: scroll;
+  background-color: #cfd8dc; 
 }
 
 
 /*--BOOKMARK STYLING*/
 ul {
-  background-color: #FFFFFF;
+  text-align: left;
   height: 8.9rem;
   width: 38rem;
   margin: 0.8rem 0 0.8rem 1rem;
   padding: 0 1rem 1rem 1rem;
-  text-align: left;
-  border: solid 2px #607D8B;
+  background-color: #FFFFFF;
+  border: solid 2px #607d8b;
 }
 
 h2 {
+  overflow: hidden;
   margin: 0.8rem;
-  color: #455A64;
+  color: #455a64;
   font-size: 1.8rem;
   font-weight: 800;
-  overflow: hidden;
-}
 }
 
 hr {
   width: 96%;
   height: 0.1em;
-  color: #CFD8DC;
+  color: #Cfd8dc;
 }
 
 
 a {
-  color: #607D8B;
   margin: 0.8rem;
+  color: #607D8B;
   text-decoration: underline;
   text-decoration-color: #f2f4f4;
   font-size: 1.6rem;
 }
 
 a:hover{
-  text-decoration-color: #FFC107;
+  text-decoration-color: #ffc107;
   font-weight: 800;
 }
 
 #read-button, 
 #delete-button {
   border: none;
+  outline: none;
   background: none;
   text-decoration: underline;
   text-decoration-color: #f2f4f4;
   font-size: 1rem;
-  color: #455A64;
+  color: #455a64;
   font-weight: 100;
 } 
 
@@ -133,37 +132,26 @@ a:hover{
 
 #read-button:hover{
   font-weight: 800;
-  text-decoration-color: #FFC107;
+  text-decoration-color: #ffc107;
 }
 
 #delete-button:hover{
-    text-decoration-color: #FFC107;
+  text-decoration-color: #ffc107;
 }
 
 .readButtonClicked {
-  color: #f05a28;
+  color: magenta;
+  background-color: transparent;
   font-weight: 800;
-  background-color: #f2f4f4;
   text-decoration: underline;
   text-decoration-color: #f2f4f4;
 }
 
-
 .ulClicked {
-  background-color: #F2F4F4;
+  background-color: #f2f4f4;
 }
 
 @media screen and (max-width: 1190px) {
-    .container {
-      flex-direction: column;
-    } 
-
-    .left {
-      padding: 2rem;
-    }
-    .right {
-      background-color: #CFD8DC;
-    }
     input, enter-button {
       height: 12%;
     }
@@ -176,25 +164,35 @@ a:hover{
       width: 90%;
     }
 
+    .container {
+      flex-direction: column;
+    } 
+
+    .left {
+      padding: 2rem;
+    }
+    .right {
+      background-color: #cfd8dc;
+    }
 }
 
 @media screen and (max-width: 550px) {
      h1 {
-      font-size: 3.5rem;
       margin-top: 0rem;
+      font-size: 3.5rem;
     }
 }
 
 @media screen and (max-width: 495px) {
      h1 {
-      font-size: 2.6rem;
       margin-top: 0rem;
+      font-size: 2.6rem;
     }
 }
 
    
     
-}
+
 
      
   
