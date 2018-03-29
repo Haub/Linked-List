@@ -114,8 +114,8 @@ a:hover{
   font-weight: 800;
 }
 
-#read-button, 
-#delete-button {
+.read-button, 
+.delete-button {
   border: none;
   outline: none;
   background: none;
@@ -125,22 +125,21 @@ a:hover{
   color: #455a64;
   font-weight: 100;
 } 
-
-#delete-button {
+.delete-button {
   float: right;
 }
 
-#read-button:hover{
+.read-button:hover{
   font-weight: 800;
   text-decoration-color: #ffc107;
 }
 
-#delete-button:hover{
+.delete-button:hover{
   text-decoration-color: #ffc107;
 }
 
 .readButtonClicked {
-  color: magenta;
+  color: #f05a28;
   background-color: transparent;
   font-weight: 800;
   text-decoration: underline;

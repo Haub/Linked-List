@@ -1,20 +1,19 @@
 var userTitle = document.querySelector('.website-title');
 var userUrl = document.querySelector('.website-url');
 var enterUserInput= document.querySelector('.enter-button');
-var readButton = document.querySelector('#read-button');
-var deleteButton = document.querySelector('#delete-button');
+var readButton = document.querySelector('.read-button');
+var deleteButton = document.querySelector('.delete-button');
 var bookMarkList = document.querySelector('#listed-bookmarks');
 
 
 enterUserInput.addEventListener('click', urlval);
 
-$('#listed-bookmarks').on('click', '#read-button', readButtonClicked);
-$('#listed-bookmarks').on('click', '#delete-button', deleteButtonClicked);
+$('#listed-bookmarks').on('click', '.read-button', readButtonClicked);
+$('#listed-bookmarks').on('click', '.delete-button', deleteButtonClicked);
 
 function readButtonClicked(event) {
-  event.preventDefault();
-  $(this).toggleClass('read-button','readButtonClicked');
   $(this).parent().toggleClass('ulClicked');
+  $(this).toggleClass('readButtonClicked');
 }
 
 function deleteButtonClicked () {
@@ -28,8 +27,8 @@ function captureUserInput() {
      <hr>
      <a>${userUrl.value}</a>
      <hr>
-     <button id = "read-button">Read</button>
-     <button id = "delete-button">Delete</button>
+     <button class = "read-button">Read</button>
+     <button class = "delete-button">Delete</button>
     `;
     bookMarkList.prepend(newBookmark);
     clearInput();
